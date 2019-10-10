@@ -22,12 +22,12 @@ class SideShoppingCard extends Component {
 
                 </ul>
                 <div style={{ marginTop: '20px' }}>
-                    {shoppingCard.length ?
+                    {shoppingCard.length > 0 ?
                         <h3>Total Cost: {totalCost.toFixed(2)}$</h3>
                         : null
                     }
                 </div>
-                {shoppingCard.length && <Link to='/shopcard'><Button>Shop Now</Button></Link>}
+                {shoppingCard.length > 0 && <Link to='/shopcard'><Button>Shop Now</Button></Link>}
             </div>
         )
     }

@@ -10,7 +10,11 @@ import ShoppingCard from './components/ShoppingCard';
 @observer
 
 class App extends Component {
+  hehe() {
+    console.log('aa')
+  }
   render() {
+    console.log(this.props.history)
     const { selectedProduct } = this.props.Product;
     const { shoppingCard } = this.props.Product;
     return (

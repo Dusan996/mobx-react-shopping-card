@@ -4,6 +4,8 @@ import uuid from 'uuid/v4';
 import productArray from './productlist';
 
 class Product {
+    // OVO JE STATE
+    // OBSERVABLE --> posmatraj
     @observable products = productArray;
     @observable shoppingCard = [];
     @observable selectedProduct = {};
