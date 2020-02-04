@@ -13,6 +13,7 @@ class App extends Component {
   hehe() {
     console.log('aa')
   }
+  // 
   render() {
     console.log(this.props.history)
     const { selectedProduct } = this.props.Product;
